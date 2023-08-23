@@ -6,7 +6,7 @@ router.route("/:table_id/seat")
   .put(controller.seatReservation)
   .delete(controller.removeReservation)
   .all(methodNotAllowed);
-
+  
 router.route("/")
   .get(controller.list)
   .post(controller.create)
